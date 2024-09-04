@@ -20,7 +20,8 @@
         }
     }
 
-    botOptions.JWTUrl = "http://localhost:3000/api/users/sts";
+    botOptions.JWTUrl = "https://jwt-service-provider.vercel.app/api/users/sts";
+    // botOptions.JWTUrl = "http://localhost:5000/api/users/sts";
     botOptions.userIdentity = 'vishal.chhadekar@aionos.ai';// Provide users email id here
     botOptions.botInfo = { name: "FindMeFlight", "_id": "st-04557a8f-068a-5cd2-8fcc-abed5905e7a1" }; // bot name is case sensitive
 

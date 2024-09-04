@@ -6,7 +6,7 @@
     botOptionsWiz.logLevel = 'debug';
     botOptionsWiz.koreAPIUrl = "https://bots.kore.ai";
 
-    botOptionsWiz.JWTUrl = "http://localhost:3000/api/users/sts";
+    botOptionsWiz.JWTUrl = "http://localhost:5000/api/users/sts";
     botOptionsWiz.userIdentity = 'vishal.chhadekar@aionos.ai';// Provide users email id here
     botOptionsWiz.botInfo = { name: "FindMeFlight", "_id": "st-04557a8f-068a-5cd2-8fcc-abed5905e7a1" }; // bot name is case sensitive
     botOptionsWiz.clientId = "cs-b52b989d-e2cd-5726-aa13-0ef276d35e4e";
