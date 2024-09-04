@@ -1,0 +1,236 @@
+<!DOCTYPE>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=1.0">
+	<script src="libs/kore-no-conflict-start.js" type="text/javascript"></script>
+	<script src="libs/jquery.js" type="text/javascript"></script>
+	<script src="libs/jquery.tmpl.min.js" type="text/javascript"></script>
+	<script src="libs/jquery-ui.min.js" type="text/javascript"></script>
+	<link href="libs/jquery-ui.min.css" rel="stylesheet">
+	</link>
+	<script src="libs/moment.js" type="text/javascript"></script>
+	<script src="../libs/ie11CustomProperties.js"></script>
+	<script src="../libs/lodash.min.js"></script>
+	<script src="../libs/d3.v4.min.js"></script>
+	<script src="../libs/KoreGraphAdapter.js" type="text/javascript"></script>
+	<script src='../libs/anonymousassertion.js'></script>
+	<script src="../kore-bot-sdk-client.js"></script>
+	<script src="../libs/perfect-scrollbar.js" type="text/javascript"></script>
+
+	<!-- Uncomment these lines for amazon polly -->
+	<!-- <script src="../plugins/aws-sdk-2.1158.0.min.js"></script>
+		<script src="../plugins/kore-aws-polly.js" type="text/javascript"></script> -->
+
+
+	<!-- Uncomment these lines for AgentDestop plugin -->
+	<!-- <link href="../plugins/agentdestop/agentdesktop.css" rel="stylesheet"></link>
+		<script src="../plugins/agentdestop/libs/ac_webrtc.min.js"></script>
+		<script src="../plugins/agentdestop/libs/audio_player.js"></script>
+		<script src="../plugins/agentdestop/config.js"></script>
+		<script src="../plugins/agentdestop/libs/c2c.js"></script>
+		<script src="../plugins/agentdestop/agentdesktop.js" ></script> -->
+
+
+	<script src="chatWindow.js" type="text/javascript"></script>
+	<script src="libs/jquery.daterangepicker.js" type="text/javascript"></script>
+	<link href="libs/daterangepicker.css" rel="stylesheet">
+	</link>
+	<script src="libs/jquery-clockpicker.js" type="text/javascript"></script>
+	<link href="libs/jquery-clockpicker.css" rel="stylesheet">
+	</link>
+	<link href="../libs/kore-pickers.css" rel="stylesheet">
+	</link>
+	<script src="../libs/kore-pickers.js" type="text/javascript"></script>
+	<script src="../libs/emoji.js" type="text/javascript"></script>
+	<script src="../libs/recorder.js" type="text/javascript"></script>
+	<script src="../libs/recorderWorker.js" type="text/javascript"></script>
+	<script src="libs/dompurify.js" type="text/javascript"></script>
+	<link href="chatWindow.css" rel="stylesheet">
+	</link>
+	<link href="../libs/emojione.sprites.css" rel="stylesheet">
+	</link>
+	<link href="../libs/purejscarousel.css" rel="stylesheet">
+	</link>
+	<script src="../libs/purejscarousel.js" type="text/javascript"></script>
+	<script src="custom/customTemplate.js" type="text/javascript"></script>
+	<link href="../libs/prefect-scrollbar.css" rel="stylesheet">
+	</link>
+	<link href="custom/customTemplate.css" rel="stylesheet">
+	</link>
+	<!-- <script type="text/javascript" src="libs/loader.js"></script>  -->
+	<script src="kore-config.js" type="text/javascript"></script>
+	<script src="libs/jquery.js" type="text/javascript"></script>
+	<script src="libs/jquery.tmpl.min.js" type="text/javascript"></script>
+	<script src="libs/jquery-ui.min.js" type="text/javascript"></script>
+	<link href="libs/jquery-ui.min.css" rel="stylesheet">
+	</link>
+	<script src="chatWindow.js" type="text/javascript"></script>
+	<link href="chatWindow.css" rel="stylesheet">
+	</link>
+
+	<!-- Uncomment these lines for Google Speech. -->
+	<!-- <script type="text/javascript" src="../libs/speech/app.js"></script>
+		<script type="text/javascript" src="https://apis.google.com/js/client.js"></script> -->
+
+	<!-- Uncomment these lines for Mircosoft Azure Speech. -->
+	<!-- <script type="text/javascript" src="../libs/speech/azure/kore-azure-speech.js"></script>
+		<script type="text/javascript" src="../libs/speech/azure/speech.sdk.bundle.js"></script> -->
+
+	<!-- Uncomment for i18n support -->
+	<!-- <script src="kore-118n-config.js" type="text/javascript"></script> -->
+
+	<script src="kore-main.js" type="text/javascript"></script>
+	<script src="libs/kore-no-conflict-end.js" type="text/javascript"></script>
+
+	<!-- //custom home page -->
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 1rem 0;
+		}
+
+		header .container {
+			width: 80%;
+			margin: 0 auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		header h1 {
+			margin: 0;
+		}
+
+		header nav ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			display: flex;
+		}
+
+		header nav ul li {
+			margin-left: 20px;
+		}
+
+		header nav ul li a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		.hero {
+			background-color: #f4f4f4;
+			padding: 2rem;
+			text-align: center;
+		}
+
+		.hero h2 {
+			margin: 0;
+		}
+
+		.hero p {
+			font-size: 1.2rem;
+		}
+
+		#services {
+			padding: 2rem;
+			text-align: center;
+		}
+
+		#services h2 {
+			margin-bottom: 1rem;
+		}
+
+		.services {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+		}
+
+		.service {
+			background-color: #f4f4f4;
+			padding: 1rem;
+			margin: 1rem;
+			border-radius: 8px;
+			flex: 1 1 30%;
+			max-width: 30%;
+		}
+
+		.service h3 {
+			margin-top: 0;
+		}
+
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 1rem 0;
+			text-align: center;
+		}
+
+		footer a {
+			color: #fff;
+			text-decoration: none;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div id="kr_chatContainer">
+		<button class="openChatWindow">Open Chat Window</button>
+	</div>
+	<header>
+		<div class="container">
+			<h1>Travel Company</h1>
+			<nav>
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main id="home">
+		<section class="hero">
+			<h2>Welcome to Travel Company</h2>
+			<p>Your gateway to amazing travel experiences.</p>
+		</section>
+
+		<section id="services">
+			<h2>Our Services</h2>
+			<div class="services">
+				<div class="service">
+					<h3>Flight Booking</h3>
+					<p>Book your flights easily and securely with us.</p>
+				</div>
+				<!-- <div class="service">
+                    <h3>Hotel Reservations</h3>
+                    <p>Find and book the best hotels for your stay.</p>
+                </div> -->
+				<div class="service">
+					<h3>Travel Assistance</h3>
+					<p>Get help with your travel plans anytime, anywhere.</p>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer id="contact">
+		<div class="container">
+			<p>&copy; 2024 Travel Company. All rights reserved.</p>
+			<p>Contact us: <a href="mailto:info@travelcompany.com">info@travelcompany.com</a></p>
+		</div>
+	</footer>
+</body>
+
+</html>
