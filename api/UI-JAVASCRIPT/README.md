@@ -13,18 +13,18 @@ Integration of Kore.ai chat UI into your App
         <script src="libs/moment.js?v=1.0" type="text/javascript"></script>
         <script src="../libs/lodash.min.js?v=1.0"></script>
 
-#### 3. Include the anonymousassertion.js,kore-bot-sdk-client.js & chatWindow.js files 
+#### 3. Include the anonymousassertion.js,kore-bot-sdk-client.js & ChatWindow.js files 
         
         <script src='../libs/anonymousassertion.js?v=1.0'></script>
         <script src="../kore-bot-sdk-client.js?v=1.0"></script>
-        <script src="chatWindow.js?v=1.0" type="text/javascript"></script>
+        <script src="ChatWindow.js?v=1.0" type="text/javascript"></script>
 
 #### 4. Include dependencies for recorder , emoji, charts, Google speech and carousel template support
    
         <script src="../libs/emoji.js" type="text/javascript"></script>
         <script src="../libs/recorder.js" type="text/javascript"></script>
         <script src="../libs/recorderWorker.js" type="text/javascript"></script>
-        <script src="../libs/purejscarousel.js" type="text/javascript"></script>
+        <script src="../libs/purejsCarousel.js" type="text/javascript"></script>
         <script src="custom/CustomTemplate.js" type="text/javascript"></script>
 
 #### 5. Define the assertion function (Should be defined by the clients)
