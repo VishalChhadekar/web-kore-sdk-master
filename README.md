@@ -58,7 +58,7 @@ Integration of Kore.ai chat UI into your App. Clone the repository and create yo
 #### 2. Include Dependent JS
 	<script src="libs/jquery.js" type="text/javascript"></script>
 	<script src="libs/jquery.tmpl.min.js" type="text/javascript"></script>
-	<script src="libs/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="libs/Jquery-ui.min.js" type="text/javascript"></script>
 	<script src='libs/moment.js'></script>
 	<script src="../libs/lodash.min.js"></script>
 
@@ -66,17 +66,17 @@ Integration of Kore.ai chat UI into your App. Clone the repository and create yo
 	<script src="../libs/d3.v4.min.js"></script>
 	<script src="../libs/KoreGraphAdapter.js" type="text/javascript"></script>
 		
-#### 4. Include the kore-bot-sdk-client.js ,anonymousassertion.js & chatWindow.js files 
+#### 4. Include the kore-bot-sdk-client.js ,anonymousassertion.js & ChatWindow.js files 
 	<script src='../libs/anonymousassertion.js'></script>
 	<script src="../kore-bot-sdk-client.js"></script>
-	<script src="chatWindow.js" type="text/javascript"></script>
+	<script src="ChatWindow.js" type="text/javascript"></script>
 
 #### 5. Include dependencies for recorder , emoji, charts, Google speech and carousel template support
 	<script src="../libs/emoji.js" type="text/javascript"></script>
 	<script src="../libs/recorder.js" type="text/javascript"></script>
 	<script src="../libs/recorderWorker.js" type="text/javascript"></script>
-	<script src="../libs/purejscarousel.js" type="text/javascript"></script>
-	<script src="custom/customTemplate.js" type="text/javascript"></script>
+	<script src="../libs/purejsCarousel.js" type="text/javascript"></script>
+	<script src="custom/CustomTemplate.js" type="text/javascript"></script>
 
 	<!-- Uncomment following lines for Google Speech. -->
 	<!-- <script type="text/javascript" src="../libs/speech/app.js"></script>
@@ -272,9 +272,9 @@ Install node js if not installed  https://nodejs.org
 4. Copy the downloaded "emojione.sprites.png" image file in created "img" folder
 
 # How to handle custom templates
-  -  Custom templates logic has been separated out from chatWindow.js
+  -  Custom templates logic has been separated out from ChatWindow.js
   -  Refer custom folder under UI folder
-  -  Refer https://github.com/Koredotcom/web-kore-sdk/blob/master/UI/custom/customTemplate.js and https://github.com/Koredotcom/web-kore-sdk/blob/master/UI/custom/customTemplate.css files for sample code snippet. 
+  -  Refer https://github.com/Koredotcom/web-kore-sdk/blob/master/UI/custom/CustomTemplate.js and https://github.com/Koredotcom/web-kore-sdk/blob/master/UI/custom/customTemplate.css files for sample code snippet. 
   
 ## How to integrate Amazon Polly TTS
 1. Uncomment amazon polly files 'plugins/aws-sdk-2.668.0.min.js' and 'plugins/kore-aws-polly.js' in index.html
@@ -470,7 +470,7 @@ V8.0.0 [Major] on 31-OCT-2020: Master branch
     1.i18n and RTL support added.
     2.Support for multipage applications added.
     3.Added "list" and "live_agent" message templates.
-    4.Added flexibility to override some of the methods of chatwindow.js and kore-bot-sdk-client.js. 
+    4.Added flexibility to override some of the methods of ChatWindow.js and kore-bot-sdk-client.js. 
     5.Minor bug fixes 
     6.Added support to send metaTags.Older sdk's can take this specific change from here https://github.com/Koredotcom/web-kore-sdk/commit/aabd4ff87875728b3bc9b05176fe5fc5cb32bf18
     
@@ -529,7 +529,7 @@ V6.2.0.1 [Minor] on 26-JUNE-2018: Master branch
     Released minor release with following features:
     1.Jquery libraries upgrade to address security issue
       jquery.js - v3.3.1. 
-      jquery-ui.min.js - 1.12.1.
+      Jquery-ui.min.js - 1.12.1.
       jquery-ui.min.css - 1.12.1.
     2.Minor bug fixes.
 
@@ -543,7 +543,7 @@ V6.2.0.1 [Minor] on 26-JUNE-2018: Master branch
     Released minor release with following features:
     1.Jquery libraries upgrade to address security issue
       jquery.js - v3.3.1. 
-      jquery-ui.min.js - 1.12.1.
+      Jquery-ui.min.js - 1.12.1.
       jquery-ui.min.css - 1.12.1.
     2.Minor bug fixes.
 
