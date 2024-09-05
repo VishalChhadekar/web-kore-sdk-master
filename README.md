@@ -76,7 +76,7 @@ Integration of Kore.ai chat UI into your App. Clone the repository and create yo
 	<script src="../libs/recorder.js" type="text/javascript"></script>
 	<script src="../libs/recorderWorker.js" type="text/javascript"></script>
 	<script src="../libs/purejscarousel.js" type="text/javascript"></script>
-	<script src="custom/customTemplate.js" type="text/javascript"></script>
+	<script src="custom/CustomTemplate.js" type="text/javascript"></script>
 
 	<!-- Uncomment following lines for Google Speech. -->
 	<!-- <script type="text/javascript" src="../libs/speech/app.js"></script>
@@ -274,7 +274,7 @@ Install node js if not installed  https://nodejs.org
 # How to handle custom templates
   -  Custom templates logic has been separated out from chatWindow.js
   -  Refer custom folder under UI folder
-  -  Refer https://github.com/Koredotcom/web-kore-sdk/blob/master/UI/custom/customTemplate.js and https://github.com/Koredotcom/web-kore-sdk/blob/master/UI/custom/customTemplate.css files for sample code snippet. 
+  -  Refer https://github.com/Koredotcom/web-kore-sdk/blob/master/UI/custom/CustomTemplate.js and https://github.com/Koredotcom/web-kore-sdk/blob/master/UI/custom/customTemplate.css files for sample code snippet. 
   
 ## How to integrate Amazon Polly TTS
 1. Uncomment amazon polly files 'plugins/aws-sdk-2.668.0.min.js' and 'plugins/kore-aws-polly.js' in index.html

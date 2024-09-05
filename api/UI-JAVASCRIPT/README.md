@@ -25,7 +25,7 @@ Integration of Kore.ai chat UI into your App
         <script src="../libs/recorder.js" type="text/javascript"></script>
         <script src="../libs/recorderWorker.js" type="text/javascript"></script>
         <script src="../libs/purejscarousel.js" type="text/javascript"></script>
-        <script src="custom/customTemplate.js" type="text/javascript"></script>
+        <script src="custom/CustomTemplate.js" type="text/javascript"></script>
 
 #### 5. Define the assertion function (Should be defined by the clients)
         //NOTE:clients has to define a API which should generate and return the JWT token. and do the necessary changes in the below function like change the url,type,Authorization and on success set the returned jwt.
